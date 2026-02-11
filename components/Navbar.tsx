@@ -32,7 +32,7 @@ const linkClass = (id: string) =>
 
 
 return (
-<nav className="fixed top-0 w-full bg-black/80 backdrop-blur border-b border-white/10 z-50">
+<nav className="fixed top-0 w-full bg-black/60 backdrop-blur-xl border-b border-white/10 z-50 shadow-lg shadow-black/30">
 <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
 <span className="font-bold">Dario Sosa</span>
 <div className="flex gap-6 text-sm">
