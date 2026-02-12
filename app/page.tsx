@@ -1,38 +1,23 @@
-import About from "@/components/About";
-import Contact from "@/components/Contact";
-import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-import Projects from "@/components/Projects";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
 import Skills from "@/components/Skills";
-
-import Link from "next/link";
-
-
-import type { Metadata } from "next";
-
-
-export const metadata: Metadata = {
-title: "Dario Sosa | Full Stack Web Developer",
-description:
-"Full Stack Web Developer specializing in React, Next.js, Node.js and PostgreSQL. Building scalable web applications.",
-openGraph: {
-title: "Dario Sosa | Full Stack Web Developer",
-description:
-"Full Stack Web Developer specializing in React, Next.js, Node.js and PostgreSQL.",
-type: "website",
-},
-};
-
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
 
 export default function Home() {
-return (
-<main className="bg-black text-white min-h-screen">
-<Navbar />
-<Hero />
-<About />
-<Skills />
-<Projects />
-<Contact />
-</main>
-);
+  return (
+    <main className="relative min-h-screen bg-gradient-to-b from-black via-[#0a0a0f] to-black overflow-hidden">
+      {/* Background subtle glows */}
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_20%_30%,rgba(59,130,246,0.08),transparent_40%)]" />
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_80%_70%,rgba(139,92,246,0.08),transparent_40%)]" />
+
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+    </main>
+  );
 }
