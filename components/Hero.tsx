@@ -44,7 +44,7 @@ export default function Hero() {
           Contact Me
         </a>
         <a
-  href="/Dario_Sosa_CV.pdf"
+  href="/CV.pdf"
   target="_blank"
   className="px-6 py-3 border border-white/20 rounded-2xl hover:border-blue-400 hover:text-blue-400 transition"
 >
