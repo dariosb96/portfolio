@@ -29,6 +29,8 @@ export default function Projects() {
               Deployed in production.
             </p>
 
+           
+
             <div className="flex flex-wrap gap-3 mb-8 text-xs text-gray-400">
               {[
                 "Next.js",
@@ -49,14 +51,24 @@ export default function Projects() {
                 </span>
               ))}
             </div>
-
-            <a
+             {/* 🔐 Demo Credentials */}
+            <div className="mb-6 p-4 rounded-xl bg-white/5 border border-white/10 text-sm">
+              <p className="text-gray-300 font-medium mb-1">Demo Access:</p>
+              <p className="text-gray-400">
+                Email: <span className="text-white">demodaddo@gmail.com</span>
+              </p>
+              <p className="text-gray-400">
+                Password: <span className="text-white">12345</span>
+              </p>   <a
               href="https://daddo.vercel.app/"
               target="_blank"
               className="inline-block px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 transition text-sm font-medium"
             >
               Live Demo
             </a>
+            </div>
+
+         
           </div>
 
 
@@ -102,16 +114,6 @@ export default function Projects() {
               ))}
             </div>
 
-            {/* Si tienes demo o repo lo agregamos aquí */}
-            {/* 
-            <a
-              href="#"
-              target="_blank"
-              className="inline-block px-6 py-3 rounded-xl border border-white/20 hover:border-blue-500/40 transition text-sm font-medium"
-            >
-              View Project
-            </a>
-            */}
           </div>
 
         </div>
