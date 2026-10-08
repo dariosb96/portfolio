@@ -1,3 +1,4 @@
+
 export default function Projects() {
   return (
     <section id="projects" className="relative py-40 border-b border-white/5">
@@ -8,6 +9,76 @@ export default function Projects() {
 
         <div className="grid md:grid-cols-2 gap-12">
 
+          {/* ===================== REMIVET ===================== */}
+          <div className="md:col-span-2 group relative rounded-3xl border border-blue-500/20 bg-black/40 backdrop-blur-xl p-10 hover:border-blue-500/50 hover:-translate-y-2 transition-all duration-300">
+
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+              <h3 className="text-2xl font-semibold group-hover:text-blue-400 transition">
+                RemiVet – Veterinary Appointment Platform
+              </h3>
+
+              <span className="w-fit px-3 py-1 rounded-full border border-green-500/20 bg-green-500/10 text-green-400 text-xs">
+                Production
+              </span>
+            </div>
+
+            <p className="text-gray-400 mb-6 leading-relaxed">
+              Production-ready veterinary appointment platform built with
+              Next.js, React, TypeScript, Prisma and PostgreSQL. Includes
+              public appointment booking, service management, availability
+              scheduling and an authenticated admin dashboard.
+            </p>
+
+            <p className="text-gray-500 mb-6 text-sm leading-relaxed">
+              Integrated Google Calendar API to synchronize appointments and
+              manage availability. Designed, developed and deployed
+              independently across the full lifecycle using Vercel and Railway.
+            </p>
+
+            <div className="flex flex-wrap gap-3 mb-8 text-xs text-gray-400">
+              {[
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Prisma",
+                "PostgreSQL",
+                "Google Calendar API",
+                "NextAuth",
+                "Tailwind",
+                "Vercel",
+                "Railway",
+              ].map((tech) => (
+                <span
+                  key={tech}
+                  className="px-3 py-1 border border-white/10 rounded-full"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="https://remivet.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 transition text-sm font-medium"
+              >
+                Live Demo
+              </a>
+
+              <a
+                href="https://github.com/dariosb96/RemiVet"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-3 rounded-xl border border-white/10 hover:bg-white/5 transition text-sm font-medium"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+
+
           {/* ===================== DADDO ===================== */}
           <div className="group relative rounded-3xl border border-white/10 bg-black/40 backdrop-blur-xl p-10 hover:border-blue-500/40 hover:-translate-y-2 transition-all duration-300">
 
@@ -16,20 +87,17 @@ export default function Projects() {
             </h3>
 
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Production-ready full-stack inventory and e-commerce system built 
-              with Next.js, Node.js, Express and PostgreSQL. 
-              Includes advanced filtering, pagination, soft delete, 
-              JWT authentication and role-based access control 
-              (Super Admin, Admin, Employee).
+              Production-ready full-stack inventory and e-commerce system built
+              with Next.js, Node.js, Express and PostgreSQL. Includes advanced
+              filtering, pagination, soft delete, JWT authentication and
+              role-based access control (Super Admin, Admin, Employee).
             </p>
 
             <p className="text-gray-500 mb-6 text-sm leading-relaxed">
-              Integrated Cloudinary for secure image management and developed 
-              an admin dashboard with key business metrics. 
-              Deployed in production.
+              Integrated Cloudinary for secure image management and developed
+              an admin dashboard with key business metrics. Deployed in
+              production.
             </p>
-
-           
 
             <div className="flex flex-wrap gap-3 mb-8 text-xs text-gray-400">
               {[
@@ -41,7 +109,7 @@ export default function Projects() {
                 "Sequelize",
                 "JWT",
                 "Cloudinary",
-                "Tailwind"
+                "Tailwind",
               ].map((tech) => (
                 <span
                   key={tech}
@@ -51,24 +119,35 @@ export default function Projects() {
                 </span>
               ))}
             </div>
-             {/* 🔐 Demo Credentials */}
+
             <div className="mb-6 p-4 rounded-xl bg-white/5 border border-white/10 text-sm">
-              <p className="text-gray-300 font-medium mb-1">Demo Access:</p>
-              <p className="text-gray-400">
-                Email: <span className="text-white">demodaddo@gmail.com</span>
+              <p className="text-gray-300 font-medium mb-1">
+                Demo Access:
               </p>
+
               <p className="text-gray-400">
-                Password: <span className="text-white">12345</span>
-              </p>   <a
+                Email:{" "}
+                <span className="text-white">
+                  demodaddo@gmail.com
+                </span>
+              </p>
+
+              <p className="text-gray-400">
+                Password:{" "}
+                <span className="text-white">
+                  12345
+                </span>
+              </p>
+            </div>
+
+            <a
               href="https://daddo.vercel.app/"
               target="_blank"
+              rel="noopener noreferrer"
               className="inline-block px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 transition text-sm font-medium"
             >
               Live Demo
             </a>
-            </div>
-
-         
           </div>
 
 
@@ -80,16 +159,16 @@ export default function Projects() {
             </h3>
 
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Independent full-stack project built with Node.js, Express and 
-              PostgreSQL. Designed RESTful APIs and implemented 
-              role-based access control with secure JWT authentication.
+              Independent full-stack project built with Node.js, Express and
+              PostgreSQL. Designed RESTful APIs and implemented role-based
+              access control with secure JWT authentication.
             </p>
 
             <p className="text-gray-500 mb-6 text-sm leading-relaxed">
-              Managed relational data using Sequelize, built a dynamic 
-              role-based frontend with React and Redux, 
-              and implemented cloud image storage with AWS S3.
-              Developed and deployed independently across the full lifecycle.
+              Managed relational data using Sequelize, built a dynamic
+              role-based frontend with React and Redux, and implemented cloud
+              image storage with AWS S3. Developed and deployed independently
+              across the full lifecycle.
             </p>
 
             <div className="flex flex-wrap gap-3 mb-8 text-xs text-gray-400">
@@ -103,7 +182,7 @@ export default function Projects() {
                 "JWT",
                 "AWS S3",
                 "Tailwind",
-                "Axios"
+                "Axios",
               ].map((tech) => (
                 <span
                   key={tech}

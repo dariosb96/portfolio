@@ -21,8 +21,7 @@ export default function Hero() {
         transition={{ delay: 0.2, duration: 0.6 }}
         className="relative z-10 max-w-2xl text-gray-300 mb-10"
       >
-        I build scalable web applications using JavaScript, React and Node.js,
-        focused on clean architecture and real business needs.
+       I build production-ready web applications with modern frontend architecture, strong backend foundations, and real-world integrations.
       </motion.p>
 
       <motion.div
